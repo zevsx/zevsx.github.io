@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
+
+  </head>
+  <body>
+
+	<a-scene vr-mode-ui="enabled: false">
+
+	  <a-assets>
+	    <!--<img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">-->
+	    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+	    <img id="skyTexture" src="https://c1.staticflickr.com/3/2884/9431661691_00b0f98d2c_k.jpg">
+
+	    <a-asset-item id="myPlyModel" src="crystal.ply"></a-asset-item>
+	  </a-assets>
+
+	  <!--
+	  <a-tetrahedron position="0 2 -10" rotation="0 45 45" scale="2 2 2" src="#boxTexture">
+	    <a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+	      to="0 2.4 -10"></a-animation>
+	    <a-animation attribute="rotation" begin="click" dur="2000" to="360 405 45"></a-animation>
+	    <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+	    <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+	  </a-tetrahedron>
+	  -->
+
+
+	  <a-entity ply-model="src: #myPlyModel" rotation="-90 0 0"></a-entity>
+
+	  <a-sky height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"></a-sky>
+
+	  <a-light type="ambient" color="#445451"></a-light>
+	  <a-light type="point" intensity="2" position="0 2 0"></a-light>
+
+
+	  <a-plane src="#groundTexture" color="black" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+	  <!--
+	  <a-text value="FREQVENCY" color="#BBB" position="-0.9 1.5 -3" scale="1.5 1.5 1.5">
+	  	<a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
+	      to="-0.9 1.6 -3"></a-animation>
+	    <a-animation attribute="scale" begin="mouseenter" dur="300" to="2.3 2.3 2.3"></a-animation>
+	    <a-animation attribute="scale" begin="mouseleave" dur="300" to="2 2 2"></a-animation>
+	  </a-text>
+	  -->
+	  
+	  <a-camera></a-camera>
+
+	</a-scene>
+  <body>
+</html>
