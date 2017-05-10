@@ -24,17 +24,12 @@
 
 	  <!--<a-plane src="#groundTexture" color="black" rotation="-90 0 0" height="100" width="100"></a-plane>-->
 
-	  
-	  <a-text value="FREQVENCY" color="#BBB" position="-0.9 1.5 -3" scale="1.5 1.5 1.5">
-	  	<a-animation attribute="position" direction="alternate" dur="2000" repeat="indefinite"
-	      to="-0.9 1.6 -3"></a-animation>
-	  </a-text>
-
 
 	  <a-camera>
 	  	<a-entity ply-model="src: #myPlyModel" position="0 -2 -8" rotation="0 0 0" scale="0.500 0.500 0.500">
 	  		<a-animation attribute="rotation" duration="5000" direction="normal" to="0 90 0" repeat="indefinite"></a-animation>
 	    </a-entity>
+	    <a-text value="FREQVENCY" color="#BBB" position="-0.9 1.5 -3" scale="1.5 1.5 1.5"></a-text>
 	    <a-light type="directional" intensity="2" position="2.622 3.890 -2.73"></a-light>
         <a-light type="directional" intensity="0.400" position="-8.65 -6.00 -5.75"></a-light>
 	  </a-camera>
