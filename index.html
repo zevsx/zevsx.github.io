@@ -1,8 +1,8 @@
 <html>
   <head>
+  
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   </head>
@@ -11,19 +11,12 @@
 	<a-scene vr-mode-ui="enabled: false">
 
 	  <a-assets>
-	    <!--<img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">-->
 	    <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
 	    <img id="skyTexture" src="sky.jpg">
-
 	    <a-asset-item id="myPlyModel" src="crystal.ply"></a-asset-item>
 	  </a-assets>
 
-
 	  <a-sky height="2048" radius="30" src="#skyTexture" color="#777777" theta-length="-180" width="2048"></a-sky>
-
-
-	  <!--<a-plane src="#groundTexture" color="black" rotation="-90 0 0" height="100" width="100"></a-plane>-->
-
 
 	  <a-camera>
 	  	<a-entity ply-model="src: #myPlyModel" position="0 -2 -8" rotation="0 0 0" scale="0.500 0.500 0.500">
