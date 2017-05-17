@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
-
 .body {
 	background-color: #f2efef;
 }
@@ -21,10 +20,18 @@
 	font-family: 'Roboto Mono', monospace;
 }
 
+.profile img {
+	border-right: 3px solid #2980b9;
+}
+
 .content {
 	padding-top: 10px;
 	padding-bottom: 0px;
 	font-family: 'Roboto Mono', monospace;
+}
+
+.content img {
+	border-bottom: 3px solid #2980b9;
 }
 
 .invite {
@@ -34,8 +41,6 @@
 	font-family: 'Roboto Mono', monospace;
 }
 
-.header,
-.marketing,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
@@ -44,20 +49,6 @@
 
 }
 
-/* Custom page header */
-.header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e5e5e5;
-}
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  font-family: 'Roboto Mono', monospace;
-}
-
-/* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
@@ -65,7 +56,6 @@
   text-align: center;
 }
 
-/* Customize container */
 @media (min-width: 768px) {
   .container {
     max-width: 730px;
@@ -77,10 +67,7 @@
   font-family: 'Roboto Mono', monospace;
 }
 
-
-/* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
   .footer {
     padding-right: 0;
     padding-left: 0;
