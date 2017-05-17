@@ -11,6 +11,10 @@
 	font-family: 'Roboto Mono', monospace;
 }
 
+.title a {
+	color: black;
+}
+
 .profile {
 	font-size: 11px;
 	padding-top: 10px;
